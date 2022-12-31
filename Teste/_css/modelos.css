@@ -1,0 +1,494 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 1);
+}
+
+#interface {
+    width: 100%;
+    background-color: DarkBlue;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    padding: 10px 10px 10px 10px;
+}
+
+#cabecalho {
+    height: 160px;
+}
+
+/* section#corpo {
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+} */
+
+#rodape {
+    clear: both;
+}
+
+#rodape p {
+    text-align: center;
+}
+
+.h1-logo{
+    color: rgb(255, 255, 255);
+    font-family: 'bahnschrift', sans-serif;
+    font-size: 45pt;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    height: 100px;
+    width: 170px;
+    border: none;
+}
+span{
+    color: #0aca88;
+}
+
+#cabecalho img#logo {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    height: 100px;
+    width: 170px;
+    border: none;
+}
+
+#cabecalho img#icone {        /*  ICONE DE PRODUTOS   */
+    position: absolute;
+    left: 1240px;
+    top: 40px;
+    height: 100px;
+    width: 170px;
+}
+
+#menu {
+    display: flex;
+}
+
+#menu ul {
+    font-family: 'bahnschrift', sans-serif;
+    padding: 0px;  
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 110px;
+    left: 230px;
+}
+
+#menu li {
+    display: inline-block;
+    background-color: darkblue;
+    padding: 10px;
+    margin: 0px;
+    -webkit-transition: background-color 6s;
+    transition: background-color 6s;
+}
+
+#menu li:hover {
+    background-color: darkblue;
+}
+
+#menu h1 {
+    display: none;
+}
+
+#menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 5px #FFF, 0 0 5px #FFF, 0 0 5px #FFF, 0 0 5px #FFF, 0 0 5px #FFF, 0 0 30px #FFF, 0 0 30px #FFF;}
+
+/*Fim da formataÃ§Ã£o do menu*/
+
+#corpo {
+    display: block;
+    width: 650px;
+    float: center;
+    padding-right: 15px;
+}
+
+aside#lateral {                             /*Lateral do site*/
+    display: block;
+    width: 1400px;                         /*proporÃ§Ã£o da lateral do site*/
+    float: center;                        /*PosiÃ§Ã£o do site direita*/
+    background-color: #dddddd;        /*Cor da lateral do site*/
+    padding: 10px;                     /*EspaÃ§amento da lateral do site*/
+    margin-top: 10px;                 /*Margem do site*/
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5); /*Sombra do site*/
+}
+
+aside#lateral h1 {
+    font-family: 'bahnschrift', sans-serif;/*Fonte do site*/
+    font-size: 20pt;                      /*Tamanho do site*/
+    color: rgb(0, 0, 0);               /*Cor da fonte do site*/
+    margin-top: 0px;                    /*Margem da fonte do site*/
+}
+
+aside#lateral h2 {         
+    font-family: 'bahnschrift', sans-serif;               
+    font-size: 20pt;                      /*Tamanho do site*/   
+    color: #ffffff;                    /*Cor da fonte do site*/
+    background-color: darkblue;        /*Cor de fundo do site*/
+    padding: 10px;                     /*EspaÃ§amento do site*/
+}
+
+/* @charset "UTF-8"; */
+
+ul#album-fotos {
+    width: 600px;
+    margin: 0px auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+
+ul#album-fotos li span {
+    opacity: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(0, 0, 0, .3);
+    font-size: 9px;
+    line-height: 370px;
+    padding: 5px;
+}
+
+ul#album-fotos li {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+    transition: all .4s ease-in;
+    -webkit-transition: all .4s ease-in;
+}
+
+ul#album-fotos li:hover {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+}
+
+ul#album-fotos li:hover span {
+    opacity: 1;
+}
+
+ul#album-fotos li#foto-01 {
+    font-family: 'bahnschrift', sans-serif;
+    background: url('../_imagens/samsung.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-01:hover {
+    font-family: 'bahnschrift', sans-serif;
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto-02 {
+    font-family: 'bahnschrift', sans-serif;
+    background: url('../_imagens/apple.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-02:hover {
+    font-family: 'bahnschrift', sans-serif;
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto-03 {
+    font-family: 'bahnschrift', sans-serif;
+    background: url('../_imagens/air.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-03:hover {
+    font-family: 'bahnschrift', sans-serif;
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto-04 {
+    font-family: 'bahnschrift', sans-serif;
+    background: url('../_imagens/panela.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-04:hover {
+    font-family: 'bahnschrift', sans-serif;
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto-05 {
+    font-family: 'bahnschrift', sans-serif;
+    background: url('../_imagens/para.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-05:hover {
+    font-family: 'bahnschrift', sans-serif;
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto-06 {
+    font-family: 'bahnschrift', sans-serif;
+    background: url('../_imagens/brast.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-06:hover {
+    font-family: 'bahnschrift', sans-serif;
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto-07 {
+    font-family: 'bahnschrift', sans-serif;
+    background: url('../_imagens/cama.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-07:hover {
+    font-family: 'bahnschrift', sans-serif;
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto-08 {
+    font-family: 'bahnschrift', sans-serif;
+    background: url('../_imagens/jantar.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-08:hover {
+    font-family: 'bahnschrift', sans-serif;
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto-09 {
+    font-family: 'bahnschrift', sans-serif;
+    background: url('../_imagens/tvoled.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-09:hover {
+    font-family: 'bahnschrift', sans-serif;
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto-10 {
+    font-family: 'bahnschrift', sans-serif;
+    background: url('../_imagens/home.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-10:hover {
+    font-family: 'bahnschrift', sans-serif;
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+footer{
+    font-family: 'bahnschrift', sans-serif;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: darkblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h6{
+    font-size: 35px;
+    color: #fff;
+}
+
+footer p{
+    color: #fff;
+    font-size: 15px;
+    width: 500px;
+    text-align: center;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    line-height: 23px;
+}
+
+
+ul#album-fotos {
+    width: 600px;
+    margin: 0px auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+
+ul#album-fotos li span {
+    opacity: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(0, 0, 0, .3);
+    font-size: 9px;
+    line-height: 370px;
+    padding: 5px;
+}
+
+ul#album-fotos li {
+    float: center;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, .4);
+    transition: all .4s ease-in;
+    -webkit-transition: all .4s ease-in;
+}
+
+ul#album-fotos li:hover {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+}
+
+ul#album-fotos li:hover span {
+    opacity: 1;
+}
+
+ul#album-fotos li#foto-01 {
+    background: url('../_imagens/samsung\ \(2\).jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-01:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto-02 {
+    background: url('../_imagens/iphone.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-02:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto-03 {
+    background: url('../_imagens/xiaomi.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-03:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto-04 {
+    background: url('../_imagens/motorola.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-04:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto-05 {
+    background: url('../_imagens/lg.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-05:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto-06 {
+    background: url('../_imagens/multilazer.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-06:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto-07 {
+    background: url('../_imagens/lenoxx.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-07:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto-08 {
+    background: url('../_imagens/positivo.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-08:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto-09 {
+    background: url('../_imagens/nokia.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-09:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto-10 {
+    background: url('../_imagens/huawei.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-10:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
